@@ -22,6 +22,13 @@ BONUS 3:
 Aggiungere bottoni di start/stop  del meccanismo di autoplay.
 */
 
+// prendere elementi pagina
+
+const bigImg = document.getElementById("big-img");
+const thumb = document.getElementById("thumb");
+const prev = document.getElementById("arrow-left");
+const next = document.getElementById("arrow-right");
+
 const data = [
   {
     image: "img/01.webp",
@@ -49,3 +56,8 @@ const data = [
     text: "Marvel's Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.",
   },
 ];
+
+data.forEach((ImageGames) => {
+  console.log(ImageGames.image);
+  bigImg.innerHTML = `<img src="img/01.webp">`;
+});
