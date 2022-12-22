@@ -59,17 +59,12 @@ const data = [
 
 data.forEach((ImageGames, index) => {
   console.log(ImageGames, index);
+
   bigImg.innerHTML = `
   <img src=${ImageGames.image}>
   
   `;
 
-  thumb.innerHTML = `<div class="col"><img src=${ImageGames.image}></div>
-  <div class="col"><img src=${ImageGames.image}></div>
-  <div class="col"><img src=${ImageGames.image}></div>
-  <div class="col"><img src=${ImageGames.image}></div>
-  <div class="col"><img src=${ImageGames.image}></div>
-
-  
+  thumb.innerHTML += `<div class="col"><img src=${ImageGames.image}></div>
   `;
 });
