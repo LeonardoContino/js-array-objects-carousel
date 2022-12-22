@@ -59,13 +59,19 @@ const data = [
 
 data.forEach((ImageGames) => {
   console.log(ImageGames.image);
-  bigImg.innerHTML = `<img src="img/01.webp">`;
+  bigImg.innerHTML = `
+  <div id="arrow-left" class="arrow-left">
+  <i class="bi bi-arrow-left-circle"></i>
+   </div>      
+  <div id="arrow-right" class="arrow-right">
+  <i class="bi bi-arrow-right-circle"></i>
+   </div>
+  <img src="img/01.webp">`;
 
   thumb.innerHTML = `<div class="col"><img src="img/01.webp"></div>
   <div class="col"><img src="img/02.webp"></div>
   <div class="col"><img src="img/03.webp"></div>
   <div class="col"><img src="img/04.webp"></div>
   <div class="col"><img src="img/05.webp"></div>
-  
   `;
 });
