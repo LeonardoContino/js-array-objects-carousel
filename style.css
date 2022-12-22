@@ -7,6 +7,7 @@
   object-fit: cover;
   cursor: pointer;
   position: relative;
+  border-radius: 20px;
 }
 .textimage {
   height: 100%;
