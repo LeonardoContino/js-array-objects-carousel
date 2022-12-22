@@ -60,4 +60,12 @@ const data = [
 data.forEach((ImageGames) => {
   console.log(ImageGames.image);
   bigImg.innerHTML = `<img src="img/01.webp">`;
+
+  thumb.innerHTML = `<div class="col"><img src="img/01.webp"></div>
+  <div class="col"><img src="img/02.webp"></div>
+  <div class="col"><img src="img/03.webp"></div>
+  <div class="col"><img src="img/04.webp"></div>
+  <div class="col"><img src="img/05.webp"></div>
+  
+  `;
 });
